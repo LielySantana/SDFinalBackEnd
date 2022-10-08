@@ -1,0 +1,6 @@
+framework module Pods_Story_Downloader {
+  umbrella header "Pods-Story Downloader-umbrella.h"
+
+  export *
+  module * { export * }
+}

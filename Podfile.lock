@@ -1,0 +1,40 @@
+PODS:
+  - FTIndicator (1.2.9):
+    - FTIndicator/FTNotificationIndicator (= 1.2.9)
+    - FTIndicator/FTProgressIndicator (= 1.2.9)
+    - FTIndicator/FTToastIndicator (= 1.2.9)
+  - FTIndicator/FTNotificationIndicator (1.2.9)
+  - FTIndicator/FTProgressIndicator (1.2.9)
+  - FTIndicator/FTToastIndicator (1.2.9)
+  - IQKeyboardManagerSwift (6.5.10)
+  - NeumorphismTab (0.9.6)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - FTIndicator
+  - IQKeyboardManagerSwift
+  - NeumorphismTab
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - FTIndicator
+    - IQKeyboardManagerSwift
+    - NeumorphismTab
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  FTIndicator: f7f071fd159e5befa1d040a9ef2e3ab53fa9322c
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  NeumorphismTab: 4706107161bcee092a0c66093f1ab0221de52220
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 0385ca07368dea10dd618b72039523eb0c71960d
+
+COCOAPODS: 1.11.3
