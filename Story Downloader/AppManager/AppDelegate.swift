@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import SwiftUI
+import Foundation
+import RevenueCat
+import AVFoundation
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+ @main
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
+//    @StateObject var subsVM = subscriptionViewModel()
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Purchases.logLevel = .debug
+        Purchases.configure(with: Configuration.Builder(withAPIKey: "appl_WbfPlXJsleWqAduRJSaVfJtQlMG")
+            .with(usesStoreKit2IfAvailable: true)
+            .build())
+
+
+        Purchases.shared.delegate = self
         return true
     }
 
@@ -43,5 +54,12 @@ extension AppDelegate{
         navC.navigationBar.barStyle = .black
         UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow }?.rootViewController = navC
         UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow }?.makeKeyAndVisible()
+    }
+}
+
+
+extension AppDelegate: PurchasesDelegate{
+    func purchases(_purchases: Purchases, receivedUpdated customerInfo: CustomerInfo ){
+        print("Modified")
     }
 }

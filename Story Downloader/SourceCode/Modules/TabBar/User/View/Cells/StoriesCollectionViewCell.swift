@@ -9,6 +9,11 @@ import UIKit
 
 class StoriesCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var storiesProjection: UIImageView!
+    var storyMedia: StoriesMedia!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,7 +28,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqG-aW-9DK">
                                         <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-2J-Uw0">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2022-10-09 at 1.29.28 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-2J-Uw0">
                                                 <rect key="frame" x="2" y="2" width="70" height="70"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -84,10 +85,14 @@
                 <constraint firstItem="p1r-RI-XnN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wa5-Lr-Wao"/>
             </constraints>
             <size key="customSize" width="95" height="95"/>
+            <connections>
+                <outlet property="storiesProjection" destination="Vt4-2J-Uw0" id="C4n-pH-aj8"/>
+            </connections>
             <point key="canvasLocation" x="170.28985507246378" y="167.74553571428569"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="Screenshot 2022-10-09 at 1.29.28 AM" width="300" height="418"/>
         <namedColor name="AppThemeStoryBorder">
             <color red="0.49411764705882355" green="0.31372549019607843" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

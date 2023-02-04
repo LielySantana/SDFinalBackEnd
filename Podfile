@@ -4,11 +4,14 @@
 target 'Story Downloader' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'IQKeyboardManagerSwift'
+
+  # Pods for Story Downloader
+  pod 'IQKeyboardManagerSwift'
   pod 'SDWebImage'
   pod 'FTIndicator'
   pod 'SVProgressHUD'
   pod 'NeumorphismTab'
-  # Pods for Story Downloader
+  pod 'Alamofire'
+
 
 end

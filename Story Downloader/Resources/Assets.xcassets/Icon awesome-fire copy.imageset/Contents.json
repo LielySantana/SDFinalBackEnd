@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Icon awesome-fire copy.png",
+      "filename" : "Icon awesome-fire.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Icon awesome-fire@2x copy.png",
+      "filename" : "Icon awesome-fire@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Icon awesome-fire@3x copy.png",
+      "filename" : "Icon awesome-fire@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

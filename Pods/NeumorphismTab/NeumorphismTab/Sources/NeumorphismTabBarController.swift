@@ -11,7 +11,7 @@ import UIKit
 open class NeumorphismTabBarController: UITabBarController {
 
     var neuTabBar: NeumorphismTabBar!
-    var selectedColor = UIColor(hex: "#CB904D")
+    var selectedColor = UIColor.darkGray
     var normalColor = UIColor.lightGray {
         didSet {
             neuTabBar.tintColor = normalColor

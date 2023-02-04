@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Icon awesome-slack-hash copy.png",
+      "filename" : "Icon awesome-slack-hash.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Icon awesome-slack-hash@2x copy.png",
+      "filename" : "Icon awesome-slack-hash@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Icon awesome-slack-hash@3x copy.png",
+      "filename" : "Icon awesome-slack-hash@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -8,6 +8,9 @@
 import UIKit
 
 class HashtagCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var apiTrending: UILabel!
     
+
+    @IBOutlet weak var apiTrendView: UIView!
 }
 

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import RevenueCat
 
 class TabBarController: UIViewController{
     
@@ -70,9 +71,10 @@ class TabBarController: UIViewController{
             self.containerView.addSubview(vc.view)
             vc.didMove(toParent: self)
         case 3:
-            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "CoinsViewController") as? CoinsViewController else { return }
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubscriptionViewController") as? SubscriptionViewController else { return }
             self.addChild(vc)
             vc.view.frame = CGRect(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height);
+            
             self.containerView.addSubview(vc.view)
             vc.didMove(toParent: self)
         default:
@@ -82,7 +84,22 @@ class TabBarController: UIViewController{
     }
     
     @IBAction func buttonSelectTab(_ sender: UIButton){
-        updateTabUI(index: sender.tag)
+        if sender.tag != 3 {
+            updateTabUI(index: sender.tag)
+            print(sender.tag)
+            return
+        }
+        print(sender.tag)
+        Purchases.shared.getCustomerInfo { (customerInfo, error) in
+           
+            guard let customerInfo = customerInfo, error == nil else {return}
+            print(customerInfo.entitlements.active)
+            if customerInfo.entitlements.active.isEmpty == true {
+                self.updateTabUI(index: sender.tag)
+                
+            }
+           
+        }
     }
     
 }
